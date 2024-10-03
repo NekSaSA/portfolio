@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entwickler-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="language-selector">
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo" id="logo">Mein Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-about" id="nav-about">Über mich</a></li>
+                <li><a href="#projects" class="nav-projects" id="nav-projects">Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Hallo, ich bin <span class="name" id="name">Alexander Nabokov</span></h1>
+            <p class="hero-description" id="hero-description">Eine Person, die sich für Programmierung interessiert</p>
+            <a href="#projects" class="btn projects-btn" id="projects-btn">Meine Projekte</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title about-title" id="about-title">Über mich</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description-1" id="about-description-1">Ich bin Alexander Nabokov. Ich bin 20 Jahre alt und programmiere leidenschaftlich gerne. Ich kenne Python, JavaScript und C #.</p>
+                    <p class="about-description-2" id="about-description-2">Meine Erfahrung umfasst die Entwicklung von Telegramm-Bots, einer Portfolio-Website und die Verwendung der Gemini-API in meinen Projekten.</p>
+                </div>
+                <div class="about-image">
+                    <img src="photo.jpg" alt="Entwicklerfoto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title projects-title" id="projects-title">Meine Projekte</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="logosnapchef.jpg" alt="SnapChef AI" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title" id="project-1-title">SnapChef AI</h3>
+                        <p class="project-description" id="project-1-description">Die Einführung von Gemini Flash, das Fotos analysiert und Rezepte bereitstellt.</p>
+                        <a href="https://recept-mtqw.vercel.app/" class="btn" id="project-1-link">Mehr erfahren</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="logoTGbot.jpg" alt="Telegram Bot" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title" id="project-2-title">Telegram Bot für Sprachnachrichtentranskription</h3>
+                        <p class="project-description" id="project-2-description">Ein Bot, der Sprachnachrichten in Text umwandelt.</p>
+                        <a href="https://t.me/GsToTextt_bot" class="btn" id="project-2-link">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 <span class="name" id="footer-name">Alexander Nabokov</span>. Alle Rechte vorbehalten.</p>
+            <div class="social-links">
+                <a href="https://github.com/NekSaSA" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/boov_mr" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем скрипт для смены языков -->
+    <script src="script.js"></script>
+</body>
+</html>

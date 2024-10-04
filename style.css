@@ -233,16 +233,96 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
-    .about-content {
+    header {
+        padding: 10px 0;
+    }
+
+    nav {
         flex-direction: column;
+        align-items: flex-start;
     }
-    
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 15px;
     }
-    
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
     .section-title {
         font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+}
+
+/* Более компактные стили для экранов до 480px */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
     }
 }

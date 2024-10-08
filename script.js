@@ -7,7 +7,7 @@ function changeLanguage() {
             navAbout: "About Me",
             navProjects: "Projects",
             heroTitle: "Hello, I am",
-            heroDescription: "AI Developer and Creator of Innovative Solutions",
+            heroDescription: "A person who is interested in programming",
             projectsBtn: "My Projects",
             aboutTitle: "About Me",
             aboutDescription1: "I am Alexander Nabokov. I am 20 years old and I am passionate about programming. I know Python, JavaScript, and C#.",
